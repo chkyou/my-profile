@@ -1,0 +1,110 @@
+HTML summary
+This cheatsheet is a summary of all the important concepts of HTML which are covered in the previous videos.
+
+HTML Skeleton
+Every HTML page is structured with the same skeleton
+
+<!DOCTYPE html>
+<html>
+  <head>
+		<!-- Page's intelligence = meta tags -->
+  </head>
+  <body>
+		<!-- Page's content = displayed on the page -->
+  </body>
+</html>
+The meta tags go into the <head>
+The page content goes into the <body>
+Most important meta tags to put in the <head> are the title, description and charset:
+
+<head>
+	<title>Page Title. Maximum length 60-70 characters</title>
+	<meta name="description" content="Page description. No longer than 155 characters.">
+	<meta charset="utf-8">
+</head>
+An example:
+
+<head>
+  <title>Le Wagon | World's Best Coding School</title>
+  <meta name="description" content="Le Wagon is the best coding school for entrepreneurs">
+  <meta charset="utf-8">
+</head>
+Of course, be smart and include the important SEO keywords of your industry in the meta tags. For instance, the words “coding” and “school” are very important for Le Wagon since lots of people are searching for these exact words on Google, hence we use these words in the title and description of our page.
+
+Facebook meta tags
+Facebook use different meta tags to display a nice title, description and image when you’re sharing a page on Facebook
+
+<meta property="og:title" content="Le Wagon | World's Best Coding School">
+<meta property="og:image" content="facebook-card.jpg">
+<meta property="og:description" content="Le Wagon is the best coding school for entrepreneurs. Checkout by yourself the projects of our students.">
+<meta property="og:site_name" content="Le Wagon"/>
+Test your meta tags
+You can use these tools to test the meta tags of a page:
+
+Facebook Debugger
+Google Structured Data Testing Tool
+HTML Basic Syntax
+The basic syntax of an HTML element is:
+
+<element attribute="value">Content</element>
+Let’s see an example of this syntax on a link:
+
+<a href="https://www.lewagon.com">Le Wagon</a>
+The result of this link displayed on the page will be:
+Le Wagon
+
+Most common HTML elements
+Headers
+
+<h1>[...]</h1>  <!-- Only one per page! SEO important -->
+<h2>[...]</h2>
+<h3>[...]</h3>
+<h4>[...]</h4>
+<h5>[...]</h5>
+<h6>[...]</h6>
+Paragraphs
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Veritatis laboriosam mollitia autem at ab omnis iure quis
+  asperiores inventore eos nam aut iusto officiis deserunt
+  nihil, sequi tempore impedit quae?
+</p>
+Emphasize
+
+<p>
+  You can emphasize <em>some words</em>,
+  and even <strong>more if needed</strong>
+</p>
+Lists (unordered or ordered)
+
+<!-- Bullet points -->
+<h2>Shopping List</h2>
+<ul>
+  <li>Milk</li>
+  <li>Butter</li>
+</ul>
+
+<!-- Numbers -->
+<h2>World Cup 2018</h2>
+<ol>
+  <li>France</li>
+  <li>Uruguay</li>
+  <li>Belgium</li>
+  <li>England</li>
+</ol>
+Links
+
+<a href="https://lewagon.com" target="_blank">Le Wagon</a>
+The attribute target="_blank" makes the link open a new tab.
+
+Images
+
+<img src="logo.png" alt="Le Wagon logo">
+Forms
+
+<form>
+  <input type="email">
+  <input type="password">
+  <input type="submit" value="Sign up">
+</form>

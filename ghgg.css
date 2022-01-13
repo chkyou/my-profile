@@ -1,0 +1,94 @@
+Design your profile
+Add simple CSS rules to design fonts and colors of your profile page like in the previous videos. At the end, your profile should look like this:
+
+Screen Shot 2018-08-12 at 20.59.32.png
+
+Of course, feel free to choose different fonts and colors and be creative 😎🌈!
+
+Getting started
+We will keep working on our profile from the last lesson, so normally you should already have it on you computer. Remember:
+
+Save your work regularly.
+Check the index.html file on Google to see how you are progressing.
+Link the stylesheet in the <head>
+If you haven’t done it before, create your style.css file at the root of your project. Don’t forget to link this CSS file at the end of the <head> of your HTML.
+
+<head>
+	<title>Boris Paillard's profile</title>
+	<meta name="description" content="This is Boris' profile">
+	<meta charset="UTF-8">
+
+	<!-- Link your stylesheet here -->
+	<link rel="stylesheet" href="style.css">
+</head>
+1. Design the body
+Here are some design tasks to complete on the body:
+
+Set a nice background-color.
+Set a nice font-family, color, font-size and line-height for default texts.
+You can use a colorpicker for colors and Google Fonts for fonts (you can watch the corresponding videos).
+Tips: Defining your default CSS rules for the body directly is a way to avoid repeating the same CSS code for all elements (<p>, <li>, etc…). It will make your CSS code shorter and more readable.
+
+2. Design headers h1, h2, h3
+Here are some design tasks to complete:
+
+Choose a nice color and font-family for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size, line-height and letter-spacing for headers
+Tips:
+
+Small headers are more elegant. If you check out any website (Medium, Airbnb, etc.), you’ll see that the font-size of their headers is quite small.
+For common design rules between all headers, you can group selectors in CSS like this:
+h1, h2, h3 {
+  font-family: "Helvetica", sans-serif; /* if all headers use Helvetica */
+}
+3. Design links a
+Here are some design tasks to complete:
+
+Change the color & text-decoration of all the links
+Add hover effects to links using the pseudo-class a:hover.
+Tip: For a smooth transition when you hover on a link you can use a CSS transition. Here is the code:
+
+a {
+  color: yellow;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+Professional tips
+Be careful with CSS specificity
+I’m sure you’ve understood that all selectors don’t have the same specificity. Let’s take an example:
+
+body {
+  color: blue;
+}
+h1 {
+  color: red;
+}
+Here the h1 selector is more specific than the body selector.
+Therefore the main header <h1> will be red and all other headers and text (like h2, h3, li, p..) will be blue.
+In the next lessons, we will see how to be even more specific by giving some names to our HTML elements using id and class.
+Use Chrome inspector
+Instead of going back and forward between your CSS code in Sublime Text and your web browser to see the result of your design, you should make your tests live using Chrome inspector and then code your CSS only when you know what to code:
+
+To use Chrome inspector:
+
+Open the inspector: Right click > Inspect on your page then you can activate the selector on the left of the inspector and click on the element you want to design.
+
+Be crazy and change the CSS: once you’ve selected an element, the corresponding CSS rules of this element should appear on the right of the inspector. You can modify these CSS properties, change their value, add new properties.
+
+Copy/paste the code when you’re happy: be careful, all the tests you’re doing on the inspector are not saved and will be gone if you refresh the page. So if you’re happy with the CSS code you’ve found, just copy/paste it from the inspector into your CSS code on Sublime Text..
+
+Group.png
+
+Useful Resources
+Here are some cool resources for colors and fonts:
+
+Color Hunt: find nice color schemes.
+Coolors: create your own color schemes.
+Colorzilla Chrome extension: a free color picker on Chrome.
+Sip for Mac: a Mac color picker.
+Google Fonts: THE classic service to embed nice fonts.
+Mozilla CSS documentation: dictionary of all CSS properties.
